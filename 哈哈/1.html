@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul{
+		list-style: none;
+			background: #F3F5F7;
+			cursor: pointer;
+			margin:0;
+	
+		}
+		.hideli{
+			display: none;
+		}
+		.img1{
+			position: relative;
+			left:0px;
+			top:4px;
+		}
+		.img2{
+			position: relative;
+			left:0px;
+			top:6px;
+		}
+		.img3{
+			margin-left:18px;
+		}
+		.img4{
+			position: relative;
+			left:0px;
+			top:7px;
+		}
+		li{
+			margin:0px;
+			padding-left:0px;}
+		div{
+			float:left;
+			width:400px;
+			background:#f90;
+			margin-right:10px;}
+	</style>
+    <script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	<script type="text/javascript">
+	window.onload=function(){
+		var lis=document.getElementsByTagName("li");
+		var img=document.getElementById("imga");
+		for(var i=0 in lis){
+			lis[i].index=i;
+			lis[i].onclick=function(e){
+				e=window.event || e;
+		         if(e.stopPropagation){
+		         	e.stopPropagation();
+		         }else{
+		         	e.cancelBubble=true;
+		         }
+		        if(this.children[0].className=="img2 img3"){
+		        	alert("images/"+this.index+".png");
+		        img.src="images/"+this.index+".png";
+		        }else if(this.children[2]!==undefined){
+				if(this.children[2].className==='hideli'){
+					this.children[2].className='';
+						this.children[0].src="images/c.png";
+						this.children[0].className="img4";
+				}else{
+					this.children[2].className='hideli';
+					this.children[0].src="images/d.jpg";
+				}	
+				}
+			}
+		}
+		
+	}
+	</script>
+</head>
+<body>
+<div>
+	<ul id="par">
+	<input type="search" placeholder="Search">
+		<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">index
+			<ul class="hideli">
+				<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">调度域的展示
+					<ul class="hideli">
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">调度域状态
+							<ul class="hideli">
+								<li><img src="images/a.png" class="img2 img3">调度域质量</li>
+							</ul>
+						</li>
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">域名状态
+							<ul class="hideli">
+								<li><img src="images/a.png" class="img2 img3">调度域质量</li>
+							</ul>
+						</li>
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">线路状态
+							<ul class="hideli">
+								<li><img src="images/a.png" class="img2 img3">调度域线路质量</li>
+							</ul>
+						</li>
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">节点状态
+							<ul class="hideli">
+								<li><img src="images/a.png" class="img2 img3">调度域节点质量</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">质量排名
+					<ul class="hideli">
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">网络排名
+							<ul class="hideli">
+								<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">线路节点排名
+                                    <ul class="hideli">
+                                    	<li><img src="images/a.png" class="img2 img3">节点详细数据</li>
+                                    </ul>
+								</li>
+								<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">节点线路排名
+									<ul class="hideli">
+										<li><img src="images/a.png" class="img2 img3">线路详情数据</li>
+									</ul>
+								</li>
+							</ul>
+						</li>	
+						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">业务排名
+ 							<ul class="hideli">
+ 								<li><img src="images/a.png" class="img2 img3">线路节点排名</li>
+ 								<li><img src="images/a.png" class="img2 img3">节点线路排名</li>
+ 							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><img src="images/a.png" class="img2 img3">宽带总览</li>
+				<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">域名状态
+					<ul class="hideli">
+						<li><img src="images/a.png" class="img2 img3">网络质量</li>
+						<li><img src="images/a.png" class="img2 img3">域名排名</li>
+						<li><img src="images/a.png" class="img2 img3">域名质量</li>
+						<li><img src="images/a.png" class="img2 img3">域名节点质量</li>
+						<li><img src="images/a.png" class="img2 img3">域名劫持</li>
+					</ul>
+				</li>
+				<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">线路状态
+					<ul class="hideli">
+						<li><img src="images/a.png" class="img2 img3">网络质量</li>
+						<li><img src="images/a.png" class="img2 img3">线路全链路质量</li>
+						<li><img src="images/a.png" class="img2 img3">线路质量</li>
+						<li><img src="images/a.png" class="img2 img3">线路可用性</li>
+					</ul>
+				</li>
+				<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">节点状态
+ 					<ul class="hideli">
+ 						<li><img src="images/a.png" class="img2 img3">网络质量</li>
+ 						<li><img src="images/d.jpg" class="img1"><img src="images/a.png" class="img2">节点全链路质量
+                           <ul class="hideli">
+                           	<li><img src="images/a.png" class="img2 img3">全链路详情</li>
+                           </ul>
+ 						</li>
+ 						<li><img src="images/a.png" class="img2 img3">节点质量</li>
+ 						<li><img src="images/a.png" class="img2 img3">节点可用性</li>
+ 					</ul>
+				</li>
+				<li><img src="images/a.png" class="img2 img3">系统SLA</li>
+			</ul>
+		</li>
+	</ul>
+    
+ </div>
+    <div id="div1">
+    	<img src="images/a.png" id="imga">
+    </div>
+</body>
+</html>
