@@ -1,0 +1,31 @@
+body,p,h1,h2,h3,h4,h5,ul,li,ol,dl,dd,dt,input,button,textarea,table,thead,tbody,th,tr,td,form,fieldset{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei",arial,sans-serif;
+	color: #333;
+}
+
+fieldset{
+	border: 0;
+}
+a{ 
+	text-decoration: none;
+	color: #333;
+}
+input{
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="button"],
+input[type="submit"]{
+	cursor: pointer;
+}
+button{
+  cursor: pointer;
+  outline: none;
+}
+li{ list-style: none; }
+img{ vertical-align: top; }
+strong{ font-weight: bold }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>广告推荐位</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left-bar">
+      <div class="logo">
+        <img src="images/menu_image_logo.png" alt="同花顺">
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/menu_icon_investmentadviser.png" />
+              <p class="menu-text">投顾</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/menu_icon_strategy.png" />
+              <p class="menu-text">策略</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/menu_icon_audit.png" />
+              <p class="menu-text">审核</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item-active">
+              <img src="images/menu_icon_app.png" />
+              <p class="menu-text">APP</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="main-header">
+          <ul class="nav">
+            <li><a href="#" class="nav-active">九宫格配置</a></li>
+            <li><a href="#">广告资源设置</a></li>
+            <li><a href="#">开屏广告管理</a></li>
+            <li><a href="#">运营位设置</a></li>
+            <li><a href="#">广告配置</a></li>
+          </ul>
+        </div>
+        <div class="main-content">
+          <div class="search-form">
+            <form action="#" method="POST">
+              <label for="advName">
+                广告位名称
+                <input type="text" name="advname" class="main-text-input" id="advName" 
+                placeholder="请输入广告位名称" />
+              </label>
+              <label for="advNumber" class="ml50">
+                广告位编号
+                <input type="text" name="advnumber" class="main-text-input" id="advNumber" 
+                placeholder="请输入广告编号" />
+              </label>
+              <button class="main-btn ml10" type="submit">查询</button>
+              <button class="main-btn minor-btn ml50" type="reset">重置</button>
+            </form>
+          </div>
+          <div class="btn-handle split-line">
+            <button class="main-btn">
+              <i class="add-icon"></i>
+              新增
+            </button>
+            <button class="hide-btn">修改</button>
+            <button class="hide-btn">修改资源</button>
+            <button class="hide-btn">发布</button>
+            <button class="hide-btn">删除</button>
+          </div>
+          <div class="box-table split-line">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>广告位名称</th>
+                  <th>编码</th>
+                  <th>版本</th>
+                  <th>定位路径</th>
+                  <th>状态</th>
+                  <th>资源包路径</th>
+                  <th>开始时间</th>
+                  <th>结束时间</th>
+                  <th>显示时间</th>
+                </tr>
+              </thead>
+              <tbody>
+                  
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/index.js"></script>
+</body>
+</html>
